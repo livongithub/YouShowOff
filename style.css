@@ -1,0 +1,380 @@
+
+@font-face {
+    font-family: 'Formula';
+    src: url('fonts/Formula.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+@font-face {
+    font-family: 'Right-Grotesk';
+    src: url('fonts/Right-Grotesk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ body{
+   width: 100vw;
+   height: 100vh;
+}
+
+h2{ 
+   display: block;
+   font-family: 'Formula';
+}
+
+ h3{
+    font-family: 'Formula';
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: auto;
+    border: black 1px;
+ }
+
+ h2{
+   display: none;
+ }
+
+ p{ 
+    font-family: 'Formula';
+    font-weight: 400;
+ }
+
+h3{
+   display: none;
+}
+
+#button-container{
+   display: none;
+}
+
+#circle{
+   width: 100%;
+   /* margin-left: -50vw; */
+}
+
+ .buttons{
+   display: none;
+
+    border: 3px solid black;
+    border-radius: 100px;
+    padding-top: 10px;
+    width: 600px;
+    height: 80px;
+    margin-top: -45px;
+ }
+
+.buttons:hover{
+    background-color: black;
+    color: white;
+    transition: 300ms;
+}
+
+#title-container{
+    padding: none;
+    margin: none;
+    width: 609.078px;
+}
+
+ h1{
+    font-family: 'Right-Grotesk';
+    font-size: 130px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+ }
+
+ #selector-container{
+    width: 50%;
+ }
+
+ #title-container{
+    margin-left: 30px;
+ }
+
+ #button-container{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 50px;
+ }
+
+ #hand-emoji{
+    font-size: 150px;
+    text-align: center;
+    width: 500px;
+ }
+
+ #image-container>*{
+    width: 300px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+ }
+
+ #image-container{
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 50%); */
+    /* gap: 30px; */
+    display: none;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ #creations-container{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ #creations-container>*{
+   border: 3px solid black;
+   padding: 7px;
+ }
+
+ #illustrations{
+    width: 350px;
+ }
+
+ #game-container{
+    display: none;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ body{
+    display: flex;
+    flex-direction: row;
+ }
+
+ #content-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 100vh;
+ }
+
+ #drawingCanvas{
+   width: 400px;
+   height: 400px;
+   /* background-color: rgb(179, 255, 185); */
+ }
+
+ @media (min-width: 500px) {
+   body{
+      flex-direction: column;
+   }
+
+   /* #image-container>*{
+      width: ;
+   } */
+   #image-container{
+      margin-top: 150px;
+   }
+
+   #selector-container{
+      width: 100%;
+   }
+
+   #content-container{
+      margin-top: none;
+      height: none;
+      width: 100%;
+      margin-top: 30vh;
+   }
+
+   .buttons{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 75%;
+   }
+
+   #button-container{
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      margin-left: 0px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+
+   #title-container{
+      width: 100%;
+      text-align: center;
+   }
+
+   #game-container{
+      margin-top: 100px;
+   }
+ }
+
+
+ @media (min-width: 1200px){
+   h3{
+      font-family: 'Formula';
+      font-size: 60px;
+      font-weight: 400;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: auto;
+      /* width: 1728px;
+      height: 1117px;  */
+      border: black 1px;
+   }
+  
+   h2{
+     display: none;
+   }
+  
+   p{ 
+      font-family: 'Formula';
+      font-weight: 400;
+   }
+  
+   .buttons{
+      display: block;
+      border: 3px solid black;
+      border-radius: 100px;
+      padding-top: 10px;
+      /* padding-bottom: -10px; */
+      width: 600px;
+      height: 80px;
+      margin-top: -45px;
+   }
+  
+  .buttons:hover{
+      background-color: black;
+      color: white;
+      transition: 300ms;
+  }
+  
+  #title-container{
+      padding: none;
+      margin: none;
+      width: 609.078px;
+  }
+  
+   h1{
+      font-family: 'Right-Grotesk';
+      font-size: 130px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+   }
+  
+   #selector-container{
+      width: 50%;
+   }
+  
+   #title-container{
+      margin-left: 30px;
+   }
+  
+   #button-container{
+      display: block;
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 50px;
+   }
+  
+   #hand-emoji{
+      font-size: 150px;
+      text-align: center;
+      width: 500px;
+   }
+  
+   #image-container>*{
+      width: 300px;
+      /* margin-top: 10px;
+      margin-left: 10px; */
+   }
+  
+   #image-container{
+      /* width: 100%;
+      height: 100%; */
+      /* display: flex; */
+      /* grid-template-columns: repeat(2, 1fr); */
+      /* gap: 30px; */
+      width: 50%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+   }
+  
+   #creations-container{
+      width: 100%;
+      display: none;
+      /* margin-left: auto;
+      margin-right: auto; */
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+  
+   #creations-container>*{
+     border: 3px solid black;
+     padding: 7px;
+   }
+  
+   #illustrations{
+      width: 350px;
+   }
+  
+   #game-container{
+      display: none;
+      /* margin-left: auto;
+      margin-right: auto; */
+      width: 50%;
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 0;
+   }
+  
+   /* displaying the boxes and media queries */
+  
+   body{
+      display: flex;
+      flex-direction: row;
+   }
+  
+   #content-container{
+     display: flex;
+     /* place-content: center; */
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     height: 100vh;
+     margin-top: 0px;
+   }
+ }
+ 
+
+ /* //animation for the circles */
+
+ @keyframes moveVertical {
+   0% {
+     transform: translateY(0);
+   }
+   100% {
+     transform: translateY(var(--targetHeight, 0px)); /* Use a CSS variable to set the target height */
+   }
+ }
+
+
+
+ 

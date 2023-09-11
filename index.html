@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+<div id="selector-container">
+
+        <div id="title-container">
+            <h1>Hi! I'm Liv.</h1>
+        </div>    
+
+        <div id="button-container">
+            <h3 class="buttons" id="facts">PING PONG</h3>
+            <h3 class="buttons" id="pictures">BALLOONS</h3>
+            <h3 class="buttons" id="creations">CREATIONS</h3>
+        </div> 
+</div>
+
+<div id="content-container">
+    
+    <img id="hand-emoji" src="img/hello-animation.png">  </img>
+
+    <h2 id="browser-message">This website is made for a web-browser. Check me out on a computer!</h2>
+
+    <main id="game-container">
+        <p id="factsOnLiv"> change </p> 
+    </main>
+
+    <div id="image-container">
+    <img id ='photo' src="img/photo1.png"></img>
+    <!-- <img src="img/photo2.png"></img>
+    <img src="img/photo3.png"></img>
+    <img src="img/photo4.png"></img> -->
+
+    <div id="circle"></div>
+
+    </div>
+
+    <div id="creations-container">
+      <!-- <div id="toolbar">
+        <label for="stroke">Stroke</label>
+        <input id="stroke" name="stroke" type="color">
+        <label for="lineWidth">Line Width </label>
+        <input id="lineWidth" name="lineWidth" type="number" value="5">
+        <button id="clear">Clear</button>
+      </div>
+      <div class="drawing-board">
+        <canvas id="drawing-board"></canvas>
+      </div> -->
+        <p> Draw here!</p>
+        <p id="resetButton"> RESET</p>
+        <p id="changeDrawing">CHANGE DRAWING</p>
+        <div id="drawingCanvas">
+          <img id="sketch" src="img/sketch1.png" alt="Image" style="width: 400px; height: 400px;">
+        </div>
+
+    </div>
+</div>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+    <script src="painting.js"></script>
+  </body>
+</html>
